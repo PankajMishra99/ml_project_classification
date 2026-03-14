@@ -1,0 +1,7 @@
+README.md
+setup.py
+classfication.egg-info/PKG-INFO
+classfication.egg-info/SOURCES.txt
+classfication.egg-info/dependency_links.txt
+classfication.egg-info/requires.txt
+classfication.egg-info/top_level.txt

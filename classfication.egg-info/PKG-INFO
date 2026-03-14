@@ -1,0 +1,13 @@
+Metadata-Version: 2.4
+Name: classfication
+Version: 0.0.1
+Author: Pankaj
+Author-email: pankajmishra817395@gmail.com
+Requires-Dist: n
+Requires-Dist: u
+Requires-Dist: m
+Requires-Dist: p
+Requires-Dist: y
+Dynamic: author
+Dynamic: author-email
+Dynamic: requires-dist
