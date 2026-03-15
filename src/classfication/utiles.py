@@ -20,7 +20,7 @@ def save_object(file_path,object):
     try:
         dir_path=os.path.dirname(file_path)
         os.makedirs(dir_path,exist_ok=True) 
-        with open (dir_path,'wb') as file:
+        with open (file_path,'wb') as file:
             pickle.dump(object,file) 
             logging.info(f"Object {object} has been dump successfully on path {dir_path}")
     
@@ -32,7 +32,7 @@ def evaluate_model(x_train,x_test,y_train,y_test,models,param):
         report={} 
         for i in range(len(list(models))):
             model = list(models.values())[i] 
-            para=param[list(models.values())[i]]
+            para=param[list(models.keys())[i]]
             gs=GridSearchCV(model,para,cv=4)
             gs.fit(x_train,y_train) 
 

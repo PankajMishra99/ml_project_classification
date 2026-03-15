@@ -1,0 +1,28 @@
+[2026-03-15 08:46:34,562] 9 root INFO -The excustion has started..
+[2026-03-15 08:46:34,583] 23 root INFO -raw data reading successfully..
+[2026-03-15 08:46:34,801] 26 root INFO -train data saved sucessfully
+[2026-03-15 08:46:34,903] 28 root INFO -test data saved successfully..
+[2026-03-15 08:46:34,903] 29 root INFO -Data ingestion is completed..
+[2026-03-15 08:46:34,916] 65 root INFO -train data read successfully..
+[2026-03-15 08:46:34,919] 67 root INFO -test data read successfully..
+[2026-03-15 08:46:34,921] 42 root INFO -Numeric calumn : Pipeline(steps=[('imputer', SimpleImputer(strategy='median')),
+                ('scale', StandardScaler())]) 
+[2026-03-15 08:46:34,922] 50 root INFO -Categorical Column : Pipeline(steps=[('imputer', SimpleImputer(strategy='most_frequent')),
+                ('encode', OneHotEncoder())])
+[2026-03-15 08:46:34,982] 25 root INFO -Object ColumnTransformer(transformers=[('num_pipeline',
+                                 Pipeline(steps=[('imputer',
+                                                  SimpleImputer(strategy='median')),
+                                                 ('scale', StandardScaler())]),
+                                 ['fixed acidity', 'volatile acidity',
+                                  'citric acid', 'residual sugar', 'chlorides',
+                                  'free sulfur dioxide', 'total sulfur dioxide',
+                                  'density', 'pH', 'sulphates', 'alcohol']),
+                                ('cat_pipeline',
+                                 Pipeline(steps=[('imputer',
+                                                  SimpleImputer(strategy='most_frequent')),
+                                                 ('encode', OneHotEncoder())]),
+                                 ['quality'])]) has been dump successfully on path artifacts
+[2026-03-15 08:46:34,989] 91 root INFO -Preprocess object save successully..
+[2026-03-15 08:46:34,989] 31 root INFO -spliting data train and test input data..
+[2026-03-15 08:46:47,498] 68 root INFO -Best model name is random forest
+[2026-03-15 08:46:47,498] 78 root INFO -Best model params is {'criterion': ['gini', 'entropy', 'log_loss']}

@@ -1,0 +1,26 @@
+[2026-03-15 08:45:25,480] 9 root INFO -The excustion has started..
+[2026-03-15 08:45:25,508] 23 root INFO -raw data reading successfully..
+[2026-03-15 08:45:25,586] 26 root INFO -train data saved sucessfully
+[2026-03-15 08:45:25,616] 28 root INFO -test data saved successfully..
+[2026-03-15 08:45:25,616] 29 root INFO -Data ingestion is completed..
+[2026-03-15 08:45:25,630] 65 root INFO -train data read successfully..
+[2026-03-15 08:45:25,634] 67 root INFO -test data read successfully..
+[2026-03-15 08:45:25,638] 42 root INFO -Numeric calumn : Pipeline(steps=[('imputer', SimpleImputer(strategy='median')),
+                ('scale', StandardScaler())]) 
+[2026-03-15 08:45:25,639] 50 root INFO -Categorical Column : Pipeline(steps=[('imputer', SimpleImputer(strategy='most_frequent')),
+                ('encode', OneHotEncoder())])
+[2026-03-15 08:45:25,690] 25 root INFO -Object ColumnTransformer(transformers=[('num_pipeline',
+                                 Pipeline(steps=[('imputer',
+                                                  SimpleImputer(strategy='median')),
+                                                 ('scale', StandardScaler())]),
+                                 ['fixed acidity', 'volatile acidity',
+                                  'citric acid', 'residual sugar', 'chlorides',
+                                  'free sulfur dioxide', 'total sulfur dioxide',
+                                  'density', 'pH', 'sulphates', 'alcohol']),
+                                ('cat_pipeline',
+                                 Pipeline(steps=[('imputer',
+                                                  SimpleImputer(strategy='most_frequent')),
+                                                 ('encode', OneHotEncoder())]),
+                                 ['quality'])]) has been dump successfully on path artifacts
+[2026-03-15 08:45:25,693] 91 root INFO -Preprocess object save successully..
+[2026-03-15 08:45:25,694] 31 root INFO -spliting data train and test input data..

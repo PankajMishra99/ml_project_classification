@@ -85,8 +85,10 @@ class DataTranformation:
              
             test_arr = np.c_[input_feature_test_arr,np.array(output_feature_test)]
             
+            os.makedirs(os.path.dirname(self.data_transformation_config.preporcess_data_path),exist_ok=True)
 
-            save_object(self.data_transformation_config.preporcess_data_path,'preprocess.pkl')
+            save_object(file_path=self.data_transformation_config.preporcess_data_path,object=preporcess_obj)
+            logging.info("Preprocess object save successully..")
             return (
                 train_arr,
                 test_arr,

@@ -1,0 +1,11 @@
+[2026-03-15 08:23:19,756] 9 root INFO -The excustion has started..
+[2026-03-15 08:23:19,791] 23 root INFO -raw data reading successfully..
+[2026-03-15 08:23:20,021] 26 root INFO -train data saved sucessfully
+[2026-03-15 08:23:20,071] 28 root INFO -test data saved successfully..
+[2026-03-15 08:23:20,071] 29 root INFO -Data ingestion is completed..
+[2026-03-15 08:23:20,081] 65 root INFO -train data read successfully..
+[2026-03-15 08:23:20,085] 67 root INFO -test data read successfully..
+[2026-03-15 08:23:20,087] 42 root INFO -Numeric calumn : Pipeline(steps=[('imputer', SimpleImputer(strategy='median')),
+                ('scale', StandardScaler())]) 
+[2026-03-15 08:23:20,089] 50 root INFO -Categorical Column : Pipeline(steps=[('imputer', SimpleImputer(strategy='most_frequent')),
+                ('encode', OneHotEncoder())])
