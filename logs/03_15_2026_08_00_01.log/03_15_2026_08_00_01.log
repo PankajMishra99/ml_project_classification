@@ -1,0 +1,5 @@
+[2026-03-15 08:00:21,643] 9 root INFO -The excustion has started..
+[2026-03-15 08:00:21,768] 23 root INFO -raw data reading successfully..
+[2026-03-15 08:00:21,861] 26 root INFO -train data saved sucessfully
+[2026-03-15 08:00:21,898] 28 root INFO -test data saved successfully..
+[2026-03-15 08:00:21,898] 29 root INFO -Data ingestion is completed..

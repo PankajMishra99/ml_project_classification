@@ -42,8 +42,8 @@ class DataTranformation:
             logging.info(f"Numeric calumn : {num_pipleine} ")
             cat_pipeline = Pipeline(
                 steps=[
-                    ('imputer',SimpleImputer(strategy='most_frequnt'))
-                    ('encode',encode),
+                    ('imputer',SimpleImputer(strategy='most_frequent')),
+                    ('encode',encode)
                     
                 ]
             ) 
@@ -59,11 +59,11 @@ class DataTranformation:
         except Exception as e: 
            raise CustomException(e,sys) 
     
-    def initiate_data_transformation(self,train_path,test,path): 
+    def initiate_data_transformation(self,train_path,test_path): 
         try:
             train_df = pd.read_csv(train_path)
             logging.info("train data read successfully..")
-            test_df = pd.read_csv(test_df) 
+            test_df = pd.read_csv(test_path) 
             logging.info("test data read successfully..") 
 
             preporcess_obj = self.get_transformation_object()  
@@ -81,12 +81,10 @@ class DataTranformation:
             input_feature_train_arr = preporcess_obj.fit_transform(input_feature_train)
             input_feature_test_arr = preporcess_obj.transform(input_feature_test) 
 
-            train_arr = np.c_(
-                [input_feature_train_arr,np.array(output_feature_train)]
-            ) 
-            test_arr = np.c_(
-                [input_feature_test_arr,np.array(output_feature_test)]
-            )
+            train_arr = np.c_[input_feature_train_arr,np.array(output_feature_train)]
+             
+            test_arr = np.c_[input_feature_test_arr,np.array(output_feature_test)]
+            
 
             save_object(self.data_transformation_config.preporcess_data_path,'preprocess.pkl')
             return (
