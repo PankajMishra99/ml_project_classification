@@ -8,7 +8,7 @@ list_of_files = [
     f"src/{project_name}/component/__init__.py",
     f"src/{project_name}/component/data_ingestion.py",
     f"src/{project_name}/component/data_transformation.py",
-    f"src/{project_name}/component/data_trainer.py",
+    f"src/{project_name}/component/model_trainer.py",
     f"src/{project_name}/component/data_monitoring.py", 
     f"src/{project_name}/pipeline/__init__.py",
     f"src/{project_name}/pipeline/training_pipeline.py",
